@@ -9,7 +9,8 @@ const lifecycles = singleSpaReact({
   ReactDOM,
   rootComponent: Root,
   errorBoundary(err, info, props) {
-    // console.log("error auth", err, info, props);
+    // eslint-disable-next-line no-console
+    console.log("error navigation", err, info, props);
     // Customize the root error boundary for your microfrontend here.
     return null;
   },
